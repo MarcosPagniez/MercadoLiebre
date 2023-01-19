@@ -6,6 +6,6 @@ const app = express();
 
 app.listen(port,() => console.log(`Servidor escuchando en puerto ${port}`));
 
-app.get(`/`,(req,res)=> {
-    res.send("/home.html")
+app.get('/',(req,res)=> {
+    res.send('/')
 })
