@@ -7,5 +7,5 @@ const app = express();
 app.listen(port,() => console.log(`Servidor escuchando en puerto ${port}`));
 
 app.get('/',(req,res)=> {
-    res.send('/')
+    res.sendFile(path.join(__dirname, "/app-express/views/home.html"));
 })
