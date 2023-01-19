@@ -1,0 +1,68 @@
+.formContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.formContainer button {
+    background-color: #1259c3;
+    border: none;
+    border-radius: 4px;
+    color: #ebebeb;
+    padding: 5px;
+    transition: all 450ms;
+}
+
+.formContainer button:hover {
+    background-color: #0022AA ;
+}
+
+form {
+background-color: #ebebeb;
+display: inline-grid;
+width: 90vw;
+justify-content: center;
+font-family: "roboto";
+padding: 20px;
+}
+
+form p {
+    font-weight: bold;
+    margin: 5px;
+}
+
+form input {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.perfilUsuario {
+    display: flex;
+}
+
+.formLogin {
+    width: 100vw;
+}
+
+.formLogin input {
+    width: 80vw;
+    margin-top: 15px;
+}
+
+.formLogin button {
+background-color: #1259c3;
+font-family: "roboto";
+color: #ebebeb;
+border: none;
+border-radius: 3px;
+width: 80vw;
+padding: 5px;
+margin-top: 10px;
+}
+
+.formLogin button:hover {
+    background-color:  #0022AA;
+}

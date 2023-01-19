@@ -1,0 +1,12 @@
+{
+  "name": "mercado-liebre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app-express/app.js",
+    "test": "nodemon app-express/app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

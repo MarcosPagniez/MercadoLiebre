@@ -1,0 +1,317 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #EAC926;
+    font-family: "roboto";
+    font-size: 12px;   
+}
+
+.contenedorHeader {
+    display: flex;
+    padding-top: 5%;
+    padding-left: 2%;
+    flex-wrap: wrap;
+}
+
+.contenedorLogo {
+    width: 50%;
+}
+
+.contenedorBusqueda {
+    padding: 5% 5% 2% 5%;
+    padding-right: 0;
+    display: flex;
+    position: relative;
+}
+
+.contenedorBusqueda button {
+    height: fit-content;
+    margin: auto;
+}
+
+.busqueda {
+    display: block;
+    margin-bottom: 1%;
+    margin-right: 5px;
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    padding: 1%;
+}
+
+.contenedorFrase {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.listados {
+    display: flex;
+}
+
+.listado1 {
+    list-style: none;
+    width: 50vw;
+}
+
+.listado2 {
+    list-style: none;
+    padding: 0;
+    width: 50vw;
+}
+
+.listadoItem {
+    text-decoration: none;
+    color:black;
+    padding: 2%;
+}
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3%;
+}
+
+.burger-menu i {
+    background-color: #1259c3;
+    color: white;
+    padding: 3%;
+    margin: 2%;
+    border-radius: 15%;
+    font-size: x-large;
+}
+
+.contenedorBanner {
+    width: 100vw;
+}
+
+.contenedorBanner img {
+    width: inherit;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: "roboto";
+    color: #666;
+    padding: 15px;
+}
+
+.granContenedor {
+    box-sizing: border-box;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main {
+    background-color: #ebebeb;
+}
+
+.contenedorProducto {
+    width: 90vw;
+    background: white;
+    margin-bottom: 10px;   
+    transition: all 1000ms;
+}
+
+
+.contenedorProducto:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.contenedorProducto:hover .descripcion{
+    display: block;
+}
+
+.imagenProducto {
+    width: inherit;
+}
+
+.caracteristicas {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    padding-bottom: 10px;
+    font-family: "Roboto";
+    position: relative;
+    display: flex;
+   
+}
+
+.caracteristicas i {
+    color: #39b54a;
+    border: #39b54a solid 1px;
+    border-radius: 60px;
+    padding: 8px;
+    position: absolute;
+    top: -17px;
+    right: 3px;
+    transition: all 1000ms;
+
+}
+
+.caracteristicas i:hover {
+    transform: rotateZ(270deg);
+}
+
+.precio { 
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+}
+
+.descripcion {
+    font-size:  16px;
+    color:#666;
+    font-family: "Roboto";
+    padding-left: 15px;
+    padding-bottom: 15px;
+    display: none;   
+}
+
+.contenedorFooter {
+   text-align: center;
+   font-family: "roboto";
+   color: #666;
+}
+
+.contenedorFooter h3 {
+    font-weight: bold ;
+}
+.subContenedorFooter {
+    padding: 5%;
+}
+
+.subContenedorFooter i {
+    color: #1259c3;
+    font-size: xx-large;
+    padding-bottom: 3%;
+}
+
+.subContenedorFooter p{
+   font-size: small;
+}
+
+.subContenedorFooter i:hover {
+    color:  #0022AA;
+}
+
+.patente {
+    font-family: "roboto";
+    color: #666;
+    font-size: small;
+    padding-bottom: 5%;
+    padding-left: 5%;
+}
+
+@media (max-width: 767px){
+
+    .listado1 {
+        display: none;
+    }
+
+    .listado2 {
+        display: none;
+    }
+
+    .descripcion {
+        display: none;
+    }
+
+    .contenedorLogo {
+        width: 45vw;
+    }
+
+    .contenedorBusqueda {
+        padding: 4%;
+        padding-right: 0;
+        width: 45vw;
+    }
+
+    .contenedorBusqueda button {
+        height: fit-content;
+        position: relative;
+        top: 1px;
+        right: 20px;
+        height: 80%;
+        border: none;
+        background: white;
+        color: #666;
+    }
+}
+
+@media (min-width: 767px) {
+
+    .burger-menu {
+        display: none;
+    }
+
+    .contenedorLogo {
+        width: 29vw;
+    }
+
+    .contenedorBusqueda {
+        padding-top: 1%;
+        padding-left: 1%;
+        width: 30vw;
+        margin: auto;
+    }
+
+    .contenedorFrase {
+        width: 31vw;
+        margin: auto;
+    }
+
+    .listado1 {
+        padding: 1%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+        padding-right: 10%;
+    }
+
+    .listado2 {
+        padding: 1%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .contenedorProducto {
+        width: 45vw;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .contenedorProducto {
+        width: 22vw;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .descuento {
+        text-align: center;
+    }
+
+    
+    .contenedorFooter {
+        display: flex;
+    }
+}
+
+
+
