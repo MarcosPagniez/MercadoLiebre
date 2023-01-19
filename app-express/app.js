@@ -7,5 +7,5 @@ const app = express();
 app.listen(port,() => console.log(`Servidor escuchando en puerto ${port}`));
 
 app.get(`/`,(req,res)=> {
-    res.send("/home")
+    res.send("/home.html")
 })
